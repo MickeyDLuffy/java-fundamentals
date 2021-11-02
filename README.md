@@ -27,3 +27,16 @@ Each Student has a name, a student ID, and is either in the first, second, third
 Write Unit Tests to assert that a NaughtyStudent is a kind of student, and that its reported average grade is 10% higher than it ought to be.
 
 2. Insert a few NaughtyStudents into your lecture. Write some unit tests to assert that a NaughtyStudent is "scoring" higher than everybody else.  
+
+  # Section 3 Abstract Types
+1. Create an interface Nameable, which defines a getName() function. Refactor your student class to implement Nameable, and add the appropriate behaviour.
+
+2. Create a new class Register, which has as a constructor parameter a list of Nameable objects. Add a function getRegister which returns a list of Strings, the names of the students. 
+
+Create a unit test to check that your Register functionality does the right thing.
+  # Section 4 
+1. Create a new interface, HasLevel. This should define a method getLevel() which returns an instance of the Level enum. Have your Student implement the HasLevel interface. The students level should be entered as a constructor parameter and maintained as a private field.
+
+2. Extend your Register class with a method called getRegisterByLevel which takes a Level and returns a list of the names of students studying at that Level.
+
+3. In your Register class, create a function called PrintReport which returns a formatted string of all the names of the students grouped by their Level.
