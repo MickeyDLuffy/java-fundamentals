@@ -17,6 +17,10 @@ public class Main {
        Student student4 = new Student(5,     "aSanji", Year.THIRD);
        Student student5 = new Student(4,     "Nico", Year.FIRST);
 
+       student4.addGrades(List.of(45.0, 50.0));
+       student3.addGrades(List.of(100.0, 90.0));
+       student43.addGrades(List.of(5.0, 10.0));
+
        List<Student> programmingStudents = List.of(student, studentab, student5);
        List<Student> advancedGardeningStudents = List.of(student4, student3, student43);
        List<Student> physics4thYearStudents =
@@ -35,7 +39,9 @@ public class Main {
 
        Course physics4Year = new Course(judith, physics4thYearStudents, Year.FOURTH);
 
-
+       Register register = new Register(advancedGardeningStudents);
+       System.out.println(register.getHighestGrade());
+       System.out.println("register.getHighestGrade()");
     }
 
    private static boolean isVowel(String alphabet) {

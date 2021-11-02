@@ -4,15 +4,30 @@ import javax.annotation.processing.Generated;
 import java.io.Serial;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.DoubleStream;
 
 public class Student implements Nameable, HasLevel {
     private String name;
     private int ID;
     private Year year;
-
     private List<Double> grades;
 
+    public DoubleStream getGrades() {
+        System.out.println("Getting doublestream grades");
+        System.out.println(grades);
+        return grades.stream().mapToDouble(Double::doubleValue);
+    }
 
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", ID=" + ID +
+                ", year=" + year +
+                ", grades=" + grades +
+                '}';
+    }
 
     public Student(int ID, String name, Year year) {
         this.name = name;
@@ -21,6 +36,7 @@ public class Student implements Nameable, HasLevel {
     }
 
     public void addGrades(List<Double> grades) {
+        System.out.println("Adding grades");
         this.grades = grades;
     }
 
