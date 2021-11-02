@@ -6,6 +6,8 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+out
 # Log file
 *.log
 
