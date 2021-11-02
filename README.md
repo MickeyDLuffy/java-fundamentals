@@ -40,3 +40,11 @@ Create a unit test to check that your Register functionality does the right thin
 2. Extend your Register class with a method called getRegisterByLevel which takes a Level and returns a list of the names of students studying at that Level.
 
 3. In your Register class, create a function called PrintReport which returns a formatted string of all the names of the students grouped by their Level.
+# section 4 Generics and Streams
+  1. Refactor your Register class to use Java Streams
+
+2. Add a function to Student that returns their grades as a DoubleStream.
+
+3. Add a function to Register that gets the highest grade of all students' grades.
+
+3. Add a function to find the average of all students grades. Add another function to return the grades of students scoring above 60%.
