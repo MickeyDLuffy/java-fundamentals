@@ -36,7 +36,6 @@ public class Main {
        Course physics4Year = new Course(judith, physics4thYearStudents, Year.FOURTH);
 
 
-
     }
 
    private static boolean isVowel(String alphabet) {
