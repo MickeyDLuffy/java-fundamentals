@@ -5,7 +5,7 @@ import java.io.Serial;
 import java.util.List;
 import java.util.Random;
 
-public class Student {
+public class Student implements Nameable, HasLevel {
     private String name;
     private int ID;
     private Year year;
@@ -55,6 +55,8 @@ public class Student {
     }
 
 
-
-
+    @Override
+    public Year getLevel() {
+        return year;
+    }
 }
